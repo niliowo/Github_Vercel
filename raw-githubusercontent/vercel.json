@@ -1,6 +1,11 @@
 {
   "version": 2,
   "routes": [
-      {"src": "/(.*)","dest": "https://raw.githubusercontent.com/$1"}
-  ]
+    {
+      "src": "/(.*)",
+      "dest": "https://raw.githubusercontent.com/$1",
+      "continue": true
+    }
+  ],
+  "regions": ["hkg1"]
 }
